@@ -4,11 +4,10 @@ const p1point = document.querySelector('#p1point');
 const p2point = document.querySelector('#p2point');
 const reset = document.querySelector('#reset');
 const scoreMax = document.querySelector('#scoreMax');
-let goal = document.querySelector('#scoreMax').selectedIndex + 5;
-
+let goal = parseInt(document.querySelector('#scoreMax').value);
 
 scoreMax.addEventListener('change',(e) => {
-    goal = document.querySelector('#scoreMax').selectedIndex + 5;
+    goal = parseInt(document.querySelector('#scoreMax').value);
 })
 
 p1point.addEventListener('click',(e) => {

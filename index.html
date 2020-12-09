@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper HTML JS Bulma</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- <img
+          src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+          alt="Pingpong Paddle"
+        /> -->
+        <h1>Ping Pong Score Keeper</h1>
+      </section>
+      <section>
+        <h2><span id="p1total">0</span> to <span id="p2total">0</span></h2>
+        <p>Use the buttons below to keep score.</p>
+        <label for="scoreMax">Playing To</label>
+        <form action="/narnia">
+          <select name="scoreMax" id="scoreMax">
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+            <option value="ten">10</option>
+          </select>
+          <div>
+            <button id="p1point">+1 Player One</button>
+            <button id="p2point">+1 Player Two</button>
+            <button id="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
